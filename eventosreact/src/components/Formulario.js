@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { CategoriasConsumer } from '../context/CategoriasContext'
+import React, { Component } from 'react';
+import { CategoriasConsumer } from '../context/CategoriasContext';
 
 class Formulario extends Component {
     state = {
@@ -25,15 +25,17 @@ class Formulario extends Component {
                     <div className="uk-margin" uk-margin="true">
                         <select
                             name="categoria"
-                            className="uk-select">
+                            className="uk-select"
+                        >
                             <CategoriasConsumer>
                                 {(value) => {
-                                    return (
+                                    console.log(value);
+                                    return(
                                         value.categorias.map(categoria => (
-                                            <option key={categoria.id} value={categoria.id} data-uk-form-select>
-                                                {categoria.name_localized}
+                                            <option>
+
                                             </option>
-                                        ))
+                                            ))
                                     )
                                 }}
                             </CategoriasConsumer>
