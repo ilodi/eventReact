@@ -18,6 +18,7 @@ class CategoriasProvider extends Component {
   componentDidMount() {
     this.obtenerCategorias();
   }
+  
   //Crear metodo para componen
   obtenerCategorias = async () => {
     //Axios consumir API
