@@ -12,7 +12,7 @@ class CategoriasProvider extends Component {
   token = 'KPEUQDTDUOI4YVKOQLCQ';
 
   state = {
-    categorias: ''
+    categorias: []
   }
 
   componentDidMount() {

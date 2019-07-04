@@ -31,9 +31,11 @@ class Formulario extends Component {
                                 {(value) => {
                                     console.log(value);
                                     return(
-                                        value.categorias.map(categoria => (
-                                            <option>
-
+                                        value.categorias.map((categoria) => (
+                                            <option key={categoria.id}
+                                            value={categoria.id}
+                                            data-uk-form-select> 
+                                               {categoria.name_localized} 
                                             </option>
                                             ))
                                     )
