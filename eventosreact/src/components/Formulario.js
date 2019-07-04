@@ -39,6 +39,7 @@ class Formulario extends Component {
                             className="uk-select"
                             onChange={this.obtenerDatosEvento}
                         >
+                            <option value=""> -- </option>
                             <CategoriasConsumer>
                                 {(value) => {
                                     console.log(value);
