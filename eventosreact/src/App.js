@@ -1,23 +1,21 @@
-import React from 'react';
-import Header from './components/Header';
-import Formulario from './components/Formulario';
-import CategoriasProvider from './context/CategoriasContext';
-import EventosProvider from './context/EventosContext';
+import React from "react";
+import Header from "./components/Header";
+import Formulario from "./components/Formulario";
+import CategoriasProvider from "./context/CategoriasContext";
+import EventosProvider from "./context/EventosContext";
 
 function App() {
   return (
-
     <>
-      <Header />
-      <div className="uk-container">
-        <EventosProvider>
-          <CategoriasProvider>
+      <EventosProvider>
+        <CategoriasProvider>
+          <Header />
+          <div className="uk-container">
             <Formulario />
-          </CategoriasProvider>
-        </EventosProvider>
-      </div>
+          </div>
+        </CategoriasProvider>
+      </EventosProvider>
     </>
-
   );
 }
 
